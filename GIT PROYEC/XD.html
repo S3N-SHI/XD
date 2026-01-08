@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caza al Mosquito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="pantalla-inicio">
+        <h1>¡Caza al Mosquito!</h1>
+        <input type="text" id="nombre-usuario" placeholder="Ingresa tu nombre">
+        <button id="btn-comenzar">Comenzar Juego</button>
+        <div id="record-contenedor"></div>
+    </div>
+
+    <div id="pantalla-juego" class="oculto">
+        <div id="hud">
+            <span>Jugador: <b id="display-nombre"></b></span>
+            <span>Puntos: <b id="puntuacion">0</b></span>
+        </div>
+        <img src="mosqui.jpg" id="mosquito" alt="Mosquito">
+    </div>
+
+    <audio id="zumbido" src="sumbido.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

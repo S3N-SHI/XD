@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0e0e0;
+}
+
+#pantalla-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 15px;
+}
+
+.oculto {
+    display: none !important;
+}
+
+#record-contenedor {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+#hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+#mosquito {
+    position: absolute;
+    width: 70px;
+    cursor: crosshair;
+    user-select: none;
+    transition: all 0.1s ease-in-out;
+}
